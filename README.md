@@ -41,6 +41,13 @@ için kullanılacak şekilde hazırlanmıştır.
 - `Liq Hunter-1.0.0-win.zip` (Windows x64)
 - `Liq Hunter-1.0.0-arm64-win.zip` (Windows ARM64)
 
+GitHub Release:
+
+- [v1.0.0-test](https://github.com/WeAreTheArtMakers/liqhunter/releases/tag/v1.0.0-test)
+- `Liq.Hunter-1.0.0-arm64-mac.zip`
+- `Liq.Hunter-1.0.0-win.zip`
+- `Liq.Hunter-1.0.0-arm64-win.zip`
+
 ## Çalıştırma ve Build
 
 ```bash
