@@ -55,8 +55,14 @@ Liq Hunter Desktop is an Electron-based trading workstation that brings a Pine-s
 
 ![1m Layout](screenshots/v1-1m-layout.png)
 
-## Release (v1)
+### Probability Dashboard / Bull and Bear 
+![Probability Dashboard](screenshots/probabily-v1.png) 
 
+### Liq Price Ladder / Monitoring Price 
+![Liq Price Ladder](screenshots/Price-ladder.png) 
+
+
+## Release (v1)
 Release page:
 - [v1](https://github.com/WeAreTheArtMakers/liqhunter/releases/tag/v1)
 
