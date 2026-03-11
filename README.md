@@ -1,26 +1,70 @@
 # Liq Hunter Desktop
 
-Liq Hunter, Pine Script tarafındaki çalışma süresi limitini aşmak için likidite + probability motorunu masaüstüne taşıyan Electron uygulamasıdır.
+Liq Hunter Desktop is an Electron-based trading workstation that brings a Pine-style liquidity/probability engine into a native desktop app, without TradingView script execution limits.
 
-## Bu Yayında Olanlar (v1)
+## Version 1 Highlights
 
-- Binance Spot + Binance Futures + CoinGecko + CoinMarketCap birleşik market tarama
-- Futures-only coin görünürlüğü (`SIRENUSDT`, `ARIAUSDT` gibi)
-- Token Scanner filtreleri (search/source/volume/market cap/sort)
-- Liq Hunter blokları + Liq Price Ladder + Probability Dashboard
-- WebSocket canlı kline akışı
-- Desktop Notification + Sound Alert + Preview butonları
-- Preset profilleri (kurumsal preset seti + custom kayıt)
-- Gelişmiş chart araçları (zoom/pan/fullscreen/engine-chart hide)
-- Üst alanda büyük anlık fiyat göstergesi
+- Unified market scanner with:
+  - Binance Spot
+  - Binance Futures
+  - CoinGecko
+  - CoinMarketCap
+- Futures-only symbol visibility (for example: `SIRENUSDT`, `ARIAUSDT`)
+- Token Scanner filters:
+  - search
+  - source
+  - minimum volume
+  - minimum market cap
+  - sort + direction
+- Liquidity visualization:
+  - Liq Hunter blocks
+  - Liq Price Ladder
+  - liquidity level strength bars
+- Probability engine dashboard:
+  - bull/bear probability
+  - PD zone
+  - session
+  - sweep/rejection state
+- Live Binance kline WebSocket stream (real-time updates)
+- Alerts:
+  - desktop notifications
+  - sound alerts
+  - preview buttons for both notification and sound
+- Preset system:
+  - built-in institutional presets
+  - custom save/apply/delete presets
+- Advanced chart controls:
+  - zoom/pan
+  - reset
+  - full-screen mode
+  - chart/engine visibility toggles
+- New large **live price panel** in the top area for fast monitoring
+- Header logo updated to use the app icon identity
 
-## Release v1
+## Screenshots
 
-- Release sayfası: [v1](https://github.com/WeAreTheArtMakers/liqhunter/releases/tag/v1)
-- macOS (Apple Silicon): `Liq.Hunter-1.0.0-arm64-mac.zip`
-- Windows x64: `Liq.Hunter-1.0.0-win.zip`
+### Main Dashboard
 
-## Local Build
+![Main Dashboard](screenshots/v1-overview.png)
+
+### Full-Screen Chart
+
+![Full-Screen Chart](screenshots/v1-fullscreen.png)
+
+### 1m Layout / Fast Monitoring View
+
+![1m Layout](screenshots/v1-1m-layout.png)
+
+## Release (v1)
+
+Release page:
+- [v1](https://github.com/WeAreTheArtMakers/liqhunter/releases/tag/v1)
+
+Assets:
+- `Liq.Hunter-1.0.0-arm64-mac.zip` (macOS Apple Silicon)
+- `Liq.Hunter-1.0.0-win.zip` (Windows x64)
+
+## Local Build Commands
 
 ```bash
 npm install
@@ -29,15 +73,15 @@ npx electron-builder --mac zip
 npx electron-builder --win zip --x64
 ```
 
-## Dağıtım Modeli
+## Distribution Model
 
-Bu sürüm test dağıtımıdır. Ürün modeli:
+This version is published as a test distribution:
 
-1. İlk 30 gün deneme
-2. Sonrasında üyelik/lisans aktivasyonu
-3. Plan bazlı özellik açma (Starter / Pro / Team)
+1. 30-day trial period
+2. Membership/license activation after trial
+3. Tier-based feature access (Starter / Pro / Team)
 
-## Not
+## Notes
 
-- CMC free plan key uygulama içinde kullanılabilir; istenirse `CMC_API_KEY` ile override edilebilir.
-- Kaynak kod bu depoda paylaşılmadan, yalnızca README + binary release dağıtımı hedeflenmiştir.
+- CoinMarketCap free-plan key can be overridden with `CMC_API_KEY`.
+- Repository policy is documentation + binary distribution focused.
