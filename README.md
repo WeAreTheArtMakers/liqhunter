@@ -67,7 +67,7 @@ Liq Hunter Desktop is an Electron-based trading workstation that brings a Pine-s
 
 ### Membership / Trial 30 days
 <p align="left">
-  <img src="screenshots/memberships.png" alt="Liq Price Ladder" width="300" />
+  <img src="screenshots/memberships.png" alt="Liq Price Ladder" width="500" />
 </p>
 
 ## Release (v1)
